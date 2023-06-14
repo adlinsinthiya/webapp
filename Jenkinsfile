@@ -5,10 +5,10 @@ maven 'Maven'
 }
 stages{
   stage(initialize){
-  sh ***
+  sh '''
           echo "Path =${Path}"
           echo "M2_Home= ${M2_Home}"
-     ***
+     '''
   }
   stage('Build')
   {
